@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto02PWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+         Title="Sistema Voto Electrónico" Height="424.59" Width="649.317" Icon="Images/check_2.ico">
+    <Grid Background="#FFCEF0EE">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="225" Margin="58,134,0,0" VerticalAlignment="Top" Width="207" Source="Images/voto.png"/>
+        <Label x:Name="lblNomSis" Content="SISTEMA DE VOTO ELECTRÓNICO" HorizontalAlignment="Left" Height="42" Margin="58,10,0,0" Width="532" FontSize="22" FontWeight="ExtraBold" FontFamily="Century Gothic" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+        <Label x:Name="label_Copy" Content="Elecciones 2017" HorizontalAlignment="Left" Height="42" Margin="58,57,0,0" VerticalAlignment="Top" Width="532" HorizontalContentAlignment="Center" FontFamily="Century Gothic" FontSize="22" FontWeight="ExtraBold"/>
+        <Button x:Name="button" Content="VOTANTE" HorizontalAlignment="Left" Margin="331,167,0,0" VerticalAlignment="Top" Width="192" Height="39" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="btnCandidato" Content="CANDIDATO" HorizontalAlignment="Left" Margin="331,228,0,0" VerticalAlignment="Top" Width="192" Height="39" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="btnAdmin" Content="ADMINISTRADOR" HorizontalAlignment="Left" Margin="331,295,0,0" VerticalAlignment="Top" Width="192" Height="39" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="label" Content="Ingresar como:" HorizontalAlignment="Left" Height="30" Margin="331,112,0,0" VerticalAlignment="Top" Width="192" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center"/>
     </Grid>
 </Window>
