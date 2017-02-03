@@ -68,10 +68,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="WinAsigCandidatos.xaml.vb">
+      <DependentUpon>WinAsigCandidatos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinAsigDignidades.xaml.vb">
+      <DependentUpon>WinAsigDignidades.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinLogUsuario.xaml.vb">
+      <DependentUpon>WinLogUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinMenuAdm.xaml.vb">
+      <DependentUpon>WinMenuAdm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WinVotoBinomio.xaml.vb">
       <DependentUpon>WinVotoBinomio.xaml</DependentUpon>
     </Compile>
+    <Page Include="WinAsigCandidatos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinAsigDignidades.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinLogUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WinLogVotante.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinMenuAdm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
