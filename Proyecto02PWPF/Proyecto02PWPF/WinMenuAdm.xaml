@@ -7,18 +7,12 @@
         mc:Ignorable="d"
        Title="WinMenuAdm" Height="300" Width="300">
     <Grid Background="#FFCEF0EE">
-        <Label x:Name="lbl_Bienvenido" Content="BIENVENIDO" HorizontalAlignment="Left" Margin="92,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16">
-            <Label.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF7FE450" Offset="1"/>
-                </LinearGradientBrush>
-            </Label.Foreground>
-        </Label>
-        <Button x:Name="btn_asig_dig" Content="Asignar Dignidades" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Margin="83,63,0,0" FontWeight="Bold"/>
-        <Button x:Name="btn_mostrar" Content="Mostrar Resultados" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Margin="83,160,0,0" FontWeight="Bold"/>
-        <Button x:Name="btn_asig_cand" Content="Asignar Candidatos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Margin="83,110,0,0" FontWeight="Bold"/>
-        <Button x:Name="btn_salir" Content="Salir" HorizontalAlignment="Left" Margin="109,211,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lbl_Bienvenido" Content="BIENVENIDOS" HorizontalAlignment="Left" Margin="86,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="btn_asig_dig" Content="Asignar Dignidades" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Margin="150,80,0,0" FontWeight="Bold"/>
+        <Button x:Name="btn_mostrar" Content="Mostrar Resultados" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Margin="149,163,0,0" FontWeight="Bold"/>
+        <Button x:Name="btn_asig_cand" Content="Asignar Candidatos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Margin="149,122,0,0" FontWeight="Bold"/>
+        <Button x:Name="btn_salir" Content="Salir" HorizontalAlignment="Left" Margin="105,227,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="121" Margin="16,72,0,0" VerticalAlignment="Top" Width="106" Source="Images/admin.png" Stretch="UniformToFill"/>
 
     </Grid>
 </Window>

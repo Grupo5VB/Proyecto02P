@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VotoElectronico"
         mc:Ignorable="d"
-        Title="WinAsigDignidades" Height="201.992" Width="300" Closing="Window_Closing">
+        Title="WinAsigDignidades" Height="225.996" Width="344" Closing="Window_Closing">
     <Grid Background="#FFCEF0EE" Margin="0,0,0,-4">
-        <Button x:Name="btn_nuevo" Content="Nuevo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,122,0,0"/>
-        <Button x:Name="btn_regresar" Content="Regresar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="207,122,0,0"/>
-        <Button x:Name="btn_guardar" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="110,122,0,0"/>
-        <Label x:Name="label" Content="Id:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,36,0,0"/>
-        <Label x:Name="label_Copy" Content="Tipo de dignidad:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,67,0,0"/>
-        <TextBox x:Name="txt_id" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="147,40,0,0"/>
-        <ComboBox x:Name="cbx_dignidad" HorizontalAlignment="Left" Margin="147,71,0,0" VerticalAlignment="Top" Width="120">
+        <Button x:Name="btn_nuevo" Content="Nuevo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="54,152,0,0" FontWeight="Bold" FontSize="10"/>
+        <Button x:Name="btn_regresar" Content="Regresar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="237,152,0,0" FontWeight="Bold" FontSize="10"/>
+        <Button x:Name="btn_guardar" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="145,152,0,0" FontWeight="Bold" FontSize="10"/>
+        <Label x:Name="label" Content="Id:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="142,17,0,0" FontWeight="Bold" FontSize="10"/>
+        <Label x:Name="label_Copy" Content="TipoDignidad:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,48,0,0" FontWeight="Bold" FontSize="10"/>
+        <TextBox x:Name="txt_id" HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Margin="218,20,0,0"/>
+        <ComboBox x:Name="cbx_dignidad" HorizontalAlignment="Left" Margin="218,51,0,0" VerticalAlignment="Top" Width="99" FontSize="11" Height="19">
             <ComboBoxItem Content="Binomio" IsSelected="True"/>
             <ComboBoxItem Content="Alcalde"/>
             <ComboBoxItem Content="Concejal"/>
         </ComboBox>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="15,10,0,0" VerticalAlignment="Top" Width="100" Source="Images/dignidades.png"/>
 
     </Grid>
 </Window>

@@ -37,7 +37,7 @@ Public Class WinLogUsuario
                     If u("Usuario") <> "admin" Then
                         If txt_usuario.Text = u("Usuario") And passwordAdm.Password = u("Contraseña") Then
                             encontrado = True
-                            Dim winV_Candidato As New WinMenuCand()
+                            Dim winV_Candidato As New WinMenuCandidato()
                             winV_Candidato.Owner = Me
                             winV_Candidato.DataContext = winPrincipal.dbPath
                             winV_Candidato.Show()
@@ -58,9 +58,14 @@ Public Class WinLogUsuario
         End Using
     End Sub
 
-    Private Sub btn_cancelar_Click(sender As Object, e As RoutedEventArgs) Handles btn_cancelar.Click
-        txt_usuario.Text = ""
-        passwordAdm.Password = ""
+    Private Sub btn_salir_Click(sender As Object, e As RoutedEventArgs) Handles btn_salir.Click
+        Dim inicio As New WinPrincipal
+        inicio.Owner = Me
+        inicio.Show()
+
+        Dim padre As WinLogUsuario
+        padre = Me
+        padre.Hide()
     End Sub
 
     Private Sub Window_Closing(sender As Object, e As ComponentModel.CancelEventArgs)

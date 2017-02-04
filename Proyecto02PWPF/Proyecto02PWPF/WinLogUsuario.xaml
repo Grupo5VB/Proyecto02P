@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VotoElectronico"
         mc:Ignorable="d"
-        Title="LogAdministrador" Height="300" Width="300">
+        Title="LogUsuarios" Height="300" Width="300">
     <Grid Background="#FFCEF0EE">
-        <Label Content="Usuario:" Margin="53,120,183,0" VerticalAlignment="Top" FontWeight="Bold" Background="{x:Null}" Foreground="Black"/>
-        <Label x:Name="label_Copy" Content="Contraseña:" Margin="34,163,181,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold"/>
-        <TextBox x:Name="txt_usuario" Height="23" Margin="134,124,38,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top"/>
-        <PasswordBox x:Name="passwordAdm" Margin="134,166,38,0" VerticalAlignment="Top" Height="23"/>
-        <Button x:Name="btn_cancelar" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="160,213,0,0"/>
-        <Image x:Name="image" Height="80" Margin="109,20,104,0" VerticalAlignment="Top" Source="Images/administrator-32825.jpg"/>
-        <Button x:Name="btn_Ingresar" Content="Ingresar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="53,213,0,0"/>
+        <Label Content="Usuario:" Margin="49,117,169,0" VerticalAlignment="Top" FontWeight="Bold" Background="{x:Null}" Foreground="Black" Height="27"/>
+        <Label x:Name="label_Copy" Content="Contraseña:" Margin="48,160,152,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold"/>
+        <TextBox x:Name="txt_usuario" Height="23" Margin="128,121,44,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="passwordAdm" Margin="128,163,44,0" VerticalAlignment="Top" Height="23"/>
+        <Button x:Name="btn_salir" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="159,225,0,0" FontWeight="Bold"/>
+        <Image x:Name="image" Height="124" Margin="98,7,99,0" VerticalAlignment="Top" Source="Images/usuario.png" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="btn_Ingresar" Content="Ingresar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="65,225,0,0" FontWeight="Bold"/>
 
     </Grid>
 </Window>

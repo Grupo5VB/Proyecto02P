@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Login Votante" Height="232.959" Width="429.508">
     <Grid Background="#FFCEF0EE">
-        <Label x:Name="label" Content="Ingrese su número de cédula:" Height="30" Margin="192,36,24,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <TextBox x:Name="txtId" Height="30" Margin="192,90,27,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" FontSize="14"/>
-        <Image x:Name="imgVotante" HorizontalAlignment="Left" Height="87" Margin="34,57,0,0" VerticalAlignment="Top" Source="Images/votar2.jpg"/>
-        <Button x:Name="btnIngresar" Content="Ingresar" Margin="248,143,90,0" VerticalAlignment="Top" Height="30" FontWeight="Bold"/>
+        <Label x:Name="label" Content="Ingrese su número de cédula:" Height="30" Margin="192,41,24,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtId" Height="30" Margin="192,95,27,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" FontSize="14"/>
+        <Image x:Name="imgVotante" HorizontalAlignment="Left" Height="112" Margin="37,43,0,0" VerticalAlignment="Top" Source="Images/votante.png" Width="107"/>
+        <Button x:Name="btnIngresar" Content="Ingresar" Margin="249,152,89,0" VerticalAlignment="Top" Height="30" FontWeight="Bold"/>
 
     </Grid>
 </Window>
