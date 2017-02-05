@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto02PWPF"
         mc:Ignorable="d"
-        Title="MostrarResultado" Height="746" Width="991" Icon="Images/check_2.ico" Loaded="Window_Loaded">
+        Title="MostrarResultado" Height="746" Width="991" Icon="Images/check_2.ico">
     <Grid Background="#FFCEF0EE" Height="716" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="981">
         <DockPanel x:Name="DocPIzq" HorizontalAlignment="Left" LastChildFill="False" Margin="47,182,0,79" Width="506" Cursor="" FlowDirection="RightToLeft"/>
         <Image x:Name="imgLista21" Margin="47,183,783,467" RenderTransformOrigin="-0.338,-0.169" Source="Images/Lista_21.png" Stretch="UniformToFill"/>
