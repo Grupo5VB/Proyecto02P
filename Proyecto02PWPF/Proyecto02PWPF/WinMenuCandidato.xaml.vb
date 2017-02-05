@@ -21,21 +21,31 @@ Public Class WinMenuCandidato
     End Sub
 
     Private Sub btnMostrar_Click(sender As Object, e As RoutedEventArgs) Handles btnMostrar.Click
+        'Dim inicio As New WinResultadoCandidato
+        'inicio.Owner = Me
+        'inicio.Show()
+
+        'Dim padre As WinMenuCandidato
+        'padre = Me
+        'padre.Hide()
+
         If idDignidad = "binom" Then
-            Dim winMostrarResultadoDig As New WinResultadoCandidato()
-            winMostrarResultadoDig.Owner = Me
-            winMostrarResultadoDig.DataContext = winPrincipal.dbPath
-            winMostrarResultadoDig.Show()
-            Me.Hide()
+            Dim inicio As New WinResultadoCandidato
+            inicio.Owner = Me
+            inicio.Show()
+
+            Dim padre As WinMenuCandidato
+            padre = Me
+            padre.Hide()
         ElseIf idDignidad = "concejal" Then
-            Dim winMostrarResultadoDig As New WinResultadoConcejal()
+            Dim winMostrarResultadoDig As New WinResultadoConcejal
             winMostrarResultadoDig.Owner = Me
             winMostrarResultadoDig.DataContext = winPrincipal.dbPath
             winMostrarResultadoDig.Show()
 
             Me.Hide()
         ElseIf idDignidad = "alcalde" Then
-            Dim winMostrarResultadoDig As New WinResultadoAlcalde()
+            Dim winMostrarResultadoDig As New WinResultadoAlcalde
             winMostrarResultadoDig.Owner = Me
             winMostrarResultadoDig.DataContext = winPrincipal.dbPath
             winMostrarResultadoDig.Show()
