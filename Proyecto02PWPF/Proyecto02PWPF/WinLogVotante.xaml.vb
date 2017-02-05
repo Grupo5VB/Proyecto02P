@@ -21,10 +21,10 @@ Public Class WinLogVotante
                 If txtId.Text = u("Cédula") Then
                     MessageBox.Show("Bienvenido " + u("Nombre"))
                     encontrado = True
-                    Dim winV_Binomio As New WinVotoBinomio()
-                    winV_Binomio.Owner = Me
-                    winV_Binomio.DataContext = winPrincipal.dbPath
-                    winV_Binomio.Show()
+                    Dim winRegVotos As New WinPapeletasVotos()
+                    winRegVotos.Owner = Me
+                    winRegVotos.DataContext = winPrincipal.dbPath
+                    winRegVotos.Show()
                     Me.Hide()
                     Exit For
                 Else
