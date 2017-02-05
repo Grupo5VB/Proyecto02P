@@ -59,13 +59,19 @@
     <OptionExplicit>Off</OptionExplicit>
   </PropertyGroup>
   <PropertyGroup>
-    <OptionCompare>Binary</OptionCompare>
+    <OptionCompare>Text</OptionCompare>
   </PropertyGroup>
   <PropertyGroup>
     <OptionStrict>Off</OptionStrict>
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\check_2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Core" />
@@ -111,9 +117,6 @@
     </Compile>
     <Compile Include="WinResultadoConcejal.xaml.vb">
       <DependentUpon>WinResultadoConcejal.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WinSeleccionDignidad.xaml.vb">
-      <DependentUpon>WinSeleccionDignidad.xaml</DependentUpon>
     </Compile>
     <Compile Include="WinVotoBinomio.xaml.vb">
       <DependentUpon>WinVotoBinomio.xaml</DependentUpon>
@@ -166,10 +169,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WinResultadoConcejal.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WinSeleccionDignidad.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -10,7 +10,7 @@ Public Class WinResultadoCandidato
     Dim numVotosBinomio As Integer = 0
     Public resultBinomio As Integer = 0
     Private Sub btnSalir_Click(sender As Object, e As RoutedEventArgs) Handles btnSalir.Click
-        Dim inicio As New WinSeleccionDignidad
+        Dim inicio As New WinMenuCandidato
         inicio.Owner = Me
         inicio.Show()
 
