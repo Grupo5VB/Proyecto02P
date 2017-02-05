@@ -89,7 +89,7 @@
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="70" Margin="27,175,0,0" VerticalAlignment="Top" Width="570" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3">
             <Canvas Margin="2,-1,-1,-1" RenderTransformOrigin="0.5,0.5">
-                <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.525,0.119" Canvas.Left="16" Canvas.Top="10" Source="Images/Movimiento_CREO_-_Lista_21.png" Stretch="UniformToFill"/>
+                <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.525,0.119" Canvas.Left="16" Canvas.Top="10" Source="Images/Lista_21.png" Stretch="UniformToFill"/>
                 <Label x:Name="label_Copy1" Content="Guillermo Lasso - Andrés Paez" Canvas.Left="154" Canvas.Top="21" Width="250" FontWeight="Bold" FontSize="14"/>
                 <Button x:Name="button_Copy1" Content="VOTAR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Height="39" Canvas.Left="460" Canvas.Top="15" RenderTransformOrigin="0.637,0.155" FontWeight="Bold" FontSize="16"/>
             </Canvas>

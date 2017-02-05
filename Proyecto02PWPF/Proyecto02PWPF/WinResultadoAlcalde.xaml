@@ -1,0 +1,55 @@
+﻿<Window x:Name="WinResultadoAlcalde" x:Class="WinResultadoAlcalde"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto02PWPF"
+        mc:Ignorable="d"
+        Title="MostrarResultado" Height="746" Width="991" Icon="Images/check_2.ico" Loaded="Window_Loaded">
+    <Grid Background="#FFCEF0EE" Height="716" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="981" Margin="0,0,-2,-2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DockPanel x:Name="DocPIzq" HorizontalAlignment="Left" LastChildFill="False" Margin="63,180,0,81" Width="506" Cursor="" FlowDirection="RightToLeft"/>
+        <Image x:Name="imgLista21" Margin="63,181,767,469" RenderTransformOrigin="-0.338,-0.169" Source="Images/Lista_21.png" Stretch="UniformToFill"/>
+        <Button x:Name="btnSalir" Content="Salir" Margin="676,664,193,12" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lblV21" Content="Total votos:" Margin="404,219,476,462" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lblVR21" Content="" Margin="501,219,419,469" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
+        <Label x:Name="lblV35" Content="Total votos:" Margin="404,319,492,359" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="14"/>
+        <Label x:Name="lblVR35" Content="" Margin="494,319,444,359" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
+        <Label x:Name="lblV1" Content="Total votos:" Margin="406,457,475,227" FontWeight="Bold" RenderTransformOrigin="0.547,0.429" FontSize="14"/>
+        <Label x:Name="lblVR10" Content="" Margin="501,457,429,227" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
+        <Label x:Name="lblTituloDig" Content="RESULTADOS DE LA DIGNIDAD" Margin="290,25,338,643" FontFamily="Century Gothic" FontWeight="Bold" FontSize="24"/>
+        <ProgressBar x:Name="progbarBin21" HorizontalAlignment="Left" Height="20" Margin="404,194,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="50"/>
+        <Label x:Name="lblNomBin" Content="Alcalde" Margin="415,65,294,604" FontFamily="Century Gothic" FontWeight="Bold" FontSize="22"/>
+        <Label x:Name="lblDig6" Content="Alberto Guzmán" Margin="247,528,599,123" FontWeight="Bold" FontSize="16"/>
+        <Image x:Name="imgLista35" Margin="63,268,807,353" RenderTransformOrigin="-0.338,-0.169" Source="Images/lista35.png" Stretch="UniformToFill"/>
+        <Image x:Name="imgLista10" Margin="63,384,807,227" RenderTransformOrigin="-0.338,-0.169" Source="Images/lista10.jpg" Stretch="UniformToFill"/>
+        <Image x:Name="imgLista6" Margin="63,511,807,112" RenderTransformOrigin="-0.338,-0.169" Source="Images/lista6.jpg" Stretch="UniformToFill"/>
+
+        <Label x:Name="lblV6" Content="Total votos:" Margin="404,571,477,115" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lblVR6" Content="" Margin="492,571,429,115" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
+
+        <ProgressBar x:Name="progbarBin35" HorizontalAlignment="Left" Height="20" Margin="404,294,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="30"/>
+        <ProgressBar x:Name="progbarBin10" HorizontalAlignment="Left" Height="20" Margin="404,428,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="10"/>
+        <ProgressBar x:Name="progbarBin6" HorizontalAlignment="Left" Height="20" Margin="404,535,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="5"/>
+
+
+        <Label x:Name="lblGandB" Content="Ganador:" Margin="244,666,626,15" FontWeight="Bold" RenderTransformOrigin="0.315,0.355" FontSize="16"/>
+        <Label x:Name="lblVGand" Content="" Margin="355,663,427,12" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
+        <Label x:Name="lblDig21" Content="Viviana Bonilla" Margin="247,181,582,484" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.08,-6.771"/>
+        <Label x:Name="lblDig10" Content="Isabel Cantos" Margin="247,426,575,240" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="lblDig35" Content="Ney Calderón" Margin="247,290,599,388" FontWeight="Bold" FontSize="16"/>
+
+        <DockPanel x:Name="DocDercha" LastChildFill="False" Margin="602,181,16,80" Cursor="" FlowDirection="RightToLeft"/>
+        <Image x:Name="imgListaB" Margin="615,194,254,421" RenderTransformOrigin="-0.338,-0.169" Source="Images/votoBlanco.jpg" Stretch="UniformToFill"/>
+        <ProgressBar x:Name="progbarBinB" HorizontalAlignment="Left" Height="20" Margin="765,212,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="5"/>
+        <Label x:Name="lblVN" Content="Total votos:" Margin="765,240,96,436" FontWeight="Bold" RenderTransformOrigin="0.547,0.429" FontSize="14"/>
+        <Label x:Name="lblVRB" Content="" Margin="855,237,57,456" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
+        <Image x:Name="imgListaN" Margin="615,312,254,301" RenderTransformOrigin="-0.338,-0.169" Source="Images/votoNulo.jpg" Stretch="UniformToFill"/>
+        <ProgressBar x:Name="progbarBinN" HorizontalAlignment="Left" Height="20" Margin="765,355,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="1"/>
+        <Label x:Name="lblVB" Content="Total votos:" Margin="765,384,126,301" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lblVRN" Content="" Margin="860,384,41,301" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
+
+    </Grid>
+</Window>

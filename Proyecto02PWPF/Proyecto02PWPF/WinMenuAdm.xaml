@@ -7,12 +7,24 @@
         mc:Ignorable="d"
        Title="WinMenuAdm" Height="300" Width="300">
     <Grid Background="#FFCEF0EE">
-        <Label x:Name="lbl_Bienvenido" Content="BIENVENIDOS" HorizontalAlignment="Left" Margin="86,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Button x:Name="btn_asig_dig" Content="Asignar Dignidades" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Margin="150,80,0,0" FontWeight="Bold"/>
-        <Button x:Name="btn_mostrar" Content="Mostrar Resultados" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Margin="149,163,0,0" FontWeight="Bold"/>
-        <Button x:Name="btn_asig_cand" Content="Asignar Candidatos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Margin="149,122,0,0" FontWeight="Bold"/>
-        <Button x:Name="btn_salir" Content="Salir" HorizontalAlignment="Left" Margin="105,227,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="121" Margin="16,72,0,0" VerticalAlignment="Top" Width="106" Source="Images/admin.png" Stretch="UniformToFill"/>
+        <Label x:Name="lbl_Bienvenido" Content="BIENVENIDOS" Margin="86,10,82,225" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="btn_salir" Content="Salir" Margin="105,222,112,19" FontWeight="Bold"/>
+        <StackPanel x:Name="StackMenuAdmin" Margin="148,89,16,92" RenderTransformOrigin="0.5,0.5" FlowDirection="RightToLeft">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.517"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <Button x:Name="btn_asig_dig" Content="Asignar Dignidades" VerticalAlignment="Top" Margin="7,0,-7,0" FontWeight="Bold" Height="30"/>
+            <Button x:Name="btn_mostrar" Content="Mostrar Resultados" VerticalAlignment="Top" FontWeight="Bold" Margin="6,0,-7,0" Height="28"/>
+            <Button x:Name="btn_asig_cand" Content="Asignar Candidatos" VerticalAlignment="Top" FontWeight="Bold" Margin="6,0,-7,0" Height="27"/>
+        </StackPanel>
+        <StackPanel Margin="25,75,167,95">
+            <Image x:Name="image" Margin="0,0,-6,0" Source="Images/admin.png" Stretch="UniformToFill" Height="121" HorizontalAlignment="Left" Width="106"/>
+        </StackPanel>
 
     </Grid>
 </Window>

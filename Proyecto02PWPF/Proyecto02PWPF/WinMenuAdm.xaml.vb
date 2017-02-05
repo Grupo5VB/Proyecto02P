@@ -19,4 +19,8 @@
         winPrincipal.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btn_mostrar_Click(sender As Object, e As RoutedEventArgs)
+
+    End Sub
 End Class
