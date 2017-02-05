@@ -1,6 +1,8 @@
 ﻿
 Imports System.Data
 Imports System.Data.OleDb
+Imports Proyecto02PWPF
+
 Public Class WinSeleccionDignidad
     Private dsContVotos As DataSet
     Dim winPrincipal As New WinPrincipal
@@ -19,8 +21,11 @@ Public Class WinSeleccionDignidad
                 For Each u As DataRow In dsContVotos.Tables("ContadorVotos").Rows
                     If u("idDignidad") = "1" Then
                         encontrado = True
-                        numVotosBinomio += u("TotalVotos")
-                        resultBinomio = numVotosBinomio / 100
+                        For Each totalV As DataRow In dsContVotos.Tables("ContadorVotos").Columns
+                            numVotosBinomio += totalV("TotalVotos")
+                            resultBinomio = numVotosBinomio / 100
+                        Next
+
                     End If
                 Next
 
@@ -65,4 +70,8 @@ Public Class WinSeleccionDignidad
         padre = Me
         padre.Hide()
     End Sub
+
+    Public Shared Widening Operator CType(v As WinResultadoCandidato) As WinSeleccionDignidad
+        Throw New NotImplementedException()
+    End Operator
 End Class

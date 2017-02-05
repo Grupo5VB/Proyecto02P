@@ -1,15 +1,10 @@
-﻿Public Class WinMenuCandidato
-    Private Sub btnMostrar_Click(sender As Object, e As RoutedEventArgs) Handles btnMostrar.Click
-        Dim resultado As New WinSeleccionDignidad
-        resultado.Owner = Me
-        resultado.Show()
+﻿Imports System.Data
+Imports System.Data.OleDb
 
-        Dim padre As WinMenuCandidato
-        padre = Me
-        padre.Hide()
-    End Sub
+Public Class WinMenuCandidato
 
-
+    Dim winPrincipal As New WinPrincipal
+    Public idDignidad As String
 
     Private Sub btnSalir_Click(sender As Object, e As RoutedEventArgs) Handles btnSalir.Click
         Dim inicio As New WinPrincipal
@@ -23,5 +18,28 @@
 
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
 
+    End Sub
+
+    Private Sub btnMostrar_Click(sender As Object, e As RoutedEventArgs) Handles btnMostrar.Click
+        If idDignidad = "binom" Then
+            Dim winMostrarResultadoDig As New WinResultadoCandidato()
+            winMostrarResultadoDig.Owner = Me
+            winMostrarResultadoDig.DataContext = winPrincipal.dbPath
+            winMostrarResultadoDig.Show()
+            Me.Hide()
+        ElseIf idDignidad = "concejal" Then
+            Dim winMostrarResultadoDig As New WinResultadoConcejal()
+            winMostrarResultadoDig.Owner = Me
+            winMostrarResultadoDig.DataContext = winPrincipal.dbPath
+            winMostrarResultadoDig.Show()
+
+            Me.Hide()
+        ElseIf idDignidad = "alcalde" Then
+            Dim winMostrarResultadoDig As New WinResultadoAlcalde()
+            winMostrarResultadoDig.Owner = Me
+            winMostrarResultadoDig.DataContext = winPrincipal.dbPath
+            winMostrarResultadoDig.Show()
+            Me.Hide()
+        End If
     End Sub
 End Class

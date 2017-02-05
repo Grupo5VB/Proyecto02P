@@ -8,8 +8,7 @@ Public Class WinLogUsuario
     Dim encontrado As Boolean = False
     Public tipoUser As String = ""
 
-    Public idDignidad As String
-
+    Dim mostrarDig As New WinMenuCandidato
 
     Private Sub WinLogAdministrador1_Loaded(sender As Object, e As RoutedEventArgs) Handles MyBase.Loaded, MyBase.Loaded
 
@@ -40,17 +39,15 @@ Public Class WinLogUsuario
                     If u("Usuario") <> "admin" Then
                         If txt_usuario.Text = u("Usuario") And passwordAdm.Password = u("Contraseña") Then
                             encontrado = True
-                            idDignidad = u(3) 'Coloco en la variable idDignidad el campo del idDignidad del candidato.
-                            mostrarResultadoDig()
-
+                            mostrarDig.idDignidad = u("Usuario")   'Coloco en la variable idDignidad el campo del idDignidad del candidato.
                             Dim winV_Candidato As New WinMenuCandidato()
                             winV_Candidato.Owner = Me
-                                winV_Candidato.DataContext = winPrincipal.dbPath
-                                winV_Candidato.Show()
-                                Me.Hide()
-                                Exit For
+                            winV_Candidato.DataContext = winPrincipal.dbPath
+                            winV_Candidato.Show()
+                            Me.Hide()
+                            Exit For
                             Else
-                                Continue For
+                            Continue For
                         End If
 
                     End If
@@ -64,28 +61,28 @@ Public Class WinLogUsuario
         End Using
     End Sub
 
-    Private Sub mostrarResultadoDig()
-        If idDignidad = 1 Then
-            Dim winMostrarResultadoDig As New WinResultadoCandidato()
-            winMostrarResultadoDig.Owner = Me
-            winMostrarResultadoDig.DataContext = winPrincipal.dbPath
-            winMostrarResultadoDig.Show()
-            Me.Hide()
-        ElseIf idDignidad = 2 Then
-            Dim winMostrarResultadoDig As New WinResultadoCandidato()
-            winMostrarResultadoDig.Owner = Me
-            winMostrarResultadoDig.DataContext = winPrincipal.dbPath
-            winMostrarResultadoDig.Show()
+    'Private Sub mostrarResultadoDig()
+    '    If idDignidad = "binom" Then
+    '        Dim winMostrarResultadoDig As New WinResultadoCandidato()
+    '        winMostrarResultadoDig.Owner = Me
+    '        winMostrarResultadoDig.DataContext = winPrincipal.dbPath
+    '        winMostrarResultadoDig.Show()
+    '        Me.Hide()
+    '    ElseIf idDignidad = "concejal" Then
+    '        Dim winMostrarResultadoDig As New WinResultadoConcejal()
+    '        winMostrarResultadoDig.Owner = Me
+    '        winMostrarResultadoDig.DataContext = winPrincipal.dbPath
+    '        winMostrarResultadoDig.Show()
 
-            Me.Hide()
-        ElseIf idDignidad = 3 Then
-            Dim winMostrarResultadoDig As New WinResultadoCandidato()
-            winMostrarResultadoDig.Owner = Me
-            winMostrarResultadoDig.DataContext = winPrincipal.dbPath
-            winMostrarResultadoDig.Show()
-            Me.Hide()
-        End If
-    End Sub
+    '        Me.Hide()
+    '    ElseIf idDignidad = "alcalde" Then
+    '        Dim winMostrarResultadoDig As New WinResultadoAlcalde()
+    '        winMostrarResultadoDig.Owner = Me
+    '        winMostrarResultadoDig.DataContext = winPrincipal.dbPath
+    '        winMostrarResultadoDig.Show()
+    '        Me.Hide()
+    '    End If
+    'End Sub
 
     Private Sub btn_salir_Click(sender As Object, e As RoutedEventArgs) Handles btn_salir.Click
         Dim inicio As New WinPrincipal
