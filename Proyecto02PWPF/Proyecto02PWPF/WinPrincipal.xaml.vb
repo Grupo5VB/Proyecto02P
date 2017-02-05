@@ -2,7 +2,8 @@
 
 Class WinPrincipal
 
-    Public dbPath As String = "C:\Users\Olguis\Source\Repos\Proyecto02P\Proyecto02PWPF\BDVotacion.mdb"
+    Public dbPath As String = "C:\Users\Galo\Desktop\Proy Visual 29-01\VotoElectronico\BDVotacion.mdb"
+    ''Public dbPath As String = "C:\Users\Olguis\Source\Repos\Proyecto02P\Proyecto02PWPF\BDVotacion.mdb"
     ''Public dbPath As String = "F:\completoVB\VotoElectronico\BDVotacion.mdb"
     Public strConexion As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & dbPath
     Public dsPersonas As DataSet
