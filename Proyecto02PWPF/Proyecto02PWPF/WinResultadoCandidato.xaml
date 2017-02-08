@@ -10,26 +10,26 @@
         <DockPanel x:Name="DocPIzq" HorizontalAlignment="Left" LastChildFill="False" Margin="43,182,0,79" Width="506" Cursor="" FlowDirection="RightToLeft"/>
         <Image x:Name="imgLista21" Margin="43,183,787,467" RenderTransformOrigin="-0.338,-0.169" Source="Images/Lista_21.png" Stretch="UniformToFill"/>
         <Button x:Name="btnSalir" Content="Salir" Margin="682,666,187,10" FontWeight="Bold" FontSize="14"/>
-        <Label x:Name="lblV21" Content="Total votos:" Margin="384,221,496,460" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lblV21" Content="Total votos" Margin="384,221,496,460" FontWeight="Bold" FontSize="14"/>
         <Label x:Name="lblVR21" Content="" Margin="481,221,439,467" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
-        <Label x:Name="lblV35" Content="Total votos:" Margin="384,321,512,357" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="14"/>
+        <Label x:Name="lblV35" Content="Total votos" Margin="384,321,512,357" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="14"/>
         <Label x:Name="lblVR35" Content="" Margin="474,321,464,357" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
-        <Label x:Name="lblV1" Content="Total votos:" Margin="386,459,495,225" FontWeight="Bold" RenderTransformOrigin="0.547,0.429" FontSize="14"/>
+        <Label x:Name="lblV1" Content="Total votos" Margin="386,459,495,225" FontWeight="Bold" RenderTransformOrigin="0.547,0.429" FontSize="14"/>
         <Label x:Name="lblVR10" Content="" Margin="481,459,449,225" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
         <Label x:Name="lblTituloDig" Content="RESULTADOS DE LA DIGNIDAD" Margin="290,25,338,643" FontFamily="Century Gothic" FontWeight="Bold" FontSize="24"/>
-        <ProgressBar x:Name="progbarBin21" HorizontalAlignment="Left" Height="20" Margin="384,196,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="50"/>
+        <ProgressBar x:Name="progbarBin21" HorizontalAlignment="Left" Height="20" Margin="384,196,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
         <Label x:Name="lblNomBin" Content="Presidente-VicePresidente" Margin="332,67,377,602" FontFamily="Century Gothic" FontWeight="Bold" FontSize="20"/>
         <Label x:Name="lblDig6" Content="Viteri-Pozo" Margin="227,530,641,123" FontWeight="Bold" FontSize="16"/>
         <Image x:Name="imgLista35" Margin="43,270,827,351" RenderTransformOrigin="-0.338,-0.169" Source="Images/lista35.png" Stretch="UniformToFill"/>
         <Image x:Name="imgLista10" Margin="43,386,827,225" RenderTransformOrigin="-0.338,-0.169" Source="Images/lista10.jpg" Stretch="UniformToFill"/>
         <Image x:Name="imgLista6" Margin="43,513,827,110" RenderTransformOrigin="-0.338,-0.169" Source="Images/lista6.jpg" Stretch="UniformToFill"/>
 
-        <Label x:Name="lblV6" Content="Total votos:" Margin="384,573,497,113" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lblV6" Content="Total votos" Margin="384,573,497,113" FontWeight="Bold" FontSize="14"/>
         <Label x:Name="lblVR6" Content="" Margin="472,573,449,113" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
 
-        <ProgressBar x:Name="progbarBin35" HorizontalAlignment="Left" Height="20" Margin="384,296,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="30"/>
-        <ProgressBar x:Name="progbarBin10" HorizontalAlignment="Left" Height="20" Margin="384,430,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="10"/>
-        <ProgressBar x:Name="progbarBin6" HorizontalAlignment="Left" Height="20" Margin="384,537,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="5"/>
+        <ProgressBar x:Name="progbarBin35" HorizontalAlignment="Left" Height="20" Margin="384,296,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <ProgressBar x:Name="progbarBin10" HorizontalAlignment="Left" Height="20" Margin="384,430,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <ProgressBar x:Name="progbarBin6" HorizontalAlignment="Left" Height="20" Margin="384,537,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
 
 
         <Label x:Name="lblGandB" Content="Ganador:" Margin="250,668,620,13" FontWeight="Bold" RenderTransformOrigin="0.315,0.355" FontSize="16"/>
@@ -40,12 +40,12 @@
 
         <DockPanel x:Name="DocDercha" LastChildFill="False" Margin="582,183,0,78" Cursor="" FlowDirection="RightToLeft" HorizontalAlignment="Left" Width="385"/>
         <Image x:Name="imgListaB" Margin="595,196,274,419" RenderTransformOrigin="-0.338,-0.169" Source="Images/votoBlanco.jpg" Stretch="UniformToFill"/>
-        <ProgressBar x:Name="progbarBinB" HorizontalAlignment="Left" Height="20" Margin="745,214,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="5"/>
-        <Label x:Name="lblVN" Content="Total votos:" Margin="745,242,116,434" FontWeight="Bold" RenderTransformOrigin="0.547,0.429" FontSize="14"/>
+        <ProgressBar x:Name="progbarBinB" HorizontalAlignment="Left" Height="20" Margin="745,214,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <Label x:Name="lblVN" Content="Total votos" Margin="745,242,116,434" FontWeight="Bold" RenderTransformOrigin="0.547,0.429" FontSize="14"/>
         <Label x:Name="lblVRB" Content="" Margin="835,239,77,454" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
         <Image x:Name="imgListaN" Margin="595,314,274,299" RenderTransformOrigin="-0.338,-0.169" Source="Images/votoNulo.jpg" Stretch="UniformToFill"/>
-        <ProgressBar x:Name="progbarBinN" HorizontalAlignment="Left" Height="20" Margin="745,357,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Value="1"/>
-        <Label x:Name="lblVB" Content="Total votos:" Margin="745,386,146,299" FontWeight="Bold" FontSize="14"/>
+        <ProgressBar x:Name="progbarBinN" HorizontalAlignment="Left" Height="20" Margin="745,357,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <Label x:Name="lblVB" Content="Total votos" Margin="745,386,146,299" FontWeight="Bold" FontSize="14"/>
         <Label x:Name="lblVRN" Content="" Margin="840,386,61,299" FontWeight="Bold" RenderTransformOrigin="0.14,0.548"/>
 
     </Grid>

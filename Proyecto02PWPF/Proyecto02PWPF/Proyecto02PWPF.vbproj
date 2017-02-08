@@ -100,6 +100,9 @@
     <Compile Include="WinAsigDignidades.xaml.vb">
       <DependentUpon>WinAsigDignidades.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WinCandidatoLista.xaml.vb">
+      <DependentUpon>WinCandidatoLista.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WinLogUsuario.xaml.vb">
       <DependentUpon>WinLogUsuario.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WinAsigDignidades.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinCandidatoLista.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

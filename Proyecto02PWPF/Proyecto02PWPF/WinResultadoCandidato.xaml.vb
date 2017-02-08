@@ -28,15 +28,14 @@ Public Class WinResultadoCandidato
             For Each u As DataRow In dsContVotos.Tables("ContadorVotos").Rows
                 If u("idDignidad") = "1" Then
                     encontrado = True
-                    For Each totalV As DataRow In dsContVotos.Tables("ContadorVotos").Columns
-                        numVotosBinomio += totalV("TotalVotos")
-                        resultBinomio = numVotosBinomio / 100
+                    numVotosBinomio += u("TotalVotos")
+                    resultBinomio = numVotosBinomio / 100
                         progbarBin21.Value = resultBinomio  'Se carga el valor de los resultados de los votos
                         progbarBin35.Value = resultBinomio
                         progbarBin10.Value = resultBinomio
                         progbarBinB.Value = resultBinomio
                         progbarBinN.Value = resultBinomio
-                    Next
+
                 End If
             Next
         End Using

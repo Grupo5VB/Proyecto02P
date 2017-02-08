@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto02PWPF"
         mc:Ignorable="d"
-        Title="LogUsuarios" Height="300" Width="300">
+        Title="LogUsuarios" Height="300" Width="300" Icon="Images/check_2.ico">
     <Grid Background="#FFCEF0EE">
         <Label Content="Usuario:" Margin="49,117,169,0" VerticalAlignment="Top" FontWeight="Bold" Background="{x:Null}" Foreground="Black" Height="27"/>
         <Label x:Name="label_Copy" Content="Contraseña:" Margin="48,160,152,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold"/>

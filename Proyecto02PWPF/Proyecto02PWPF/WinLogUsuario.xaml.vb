@@ -7,12 +7,8 @@ Public Class WinLogUsuario
     Dim winPrincipal As New WinPrincipal
     Dim encontrado As Boolean = False
     Public tipoUser As String = ""
-
+    Dim idDignidad As String = ""
     Dim mostrarDig As New WinMenuCandidato
-
-    Private Sub WinLogAdministrador1_Loaded(sender As Object, e As RoutedEventArgs) Handles MyBase.Loaded, MyBase.Loaded
-
-    End Sub
 
 
     Public Sub btn_Ingresar_Click(sender As Object, e As RoutedEventArgs) Handles btn_Ingresar.Click
@@ -39,7 +35,9 @@ Public Class WinLogUsuario
                     If u("Usuario") <> "admin" Then
                         If txt_usuario.Text = u("Usuario") And passwordAdm.Password = u("Contraseña") Then
                             encontrado = True
-                            mostrarDig.idDignidad = u("Usuario")   'Coloco en la variable idDignidad el campo del idDignidad del candidato.
+                            'mostrarDig.idDignidad = u("Usuario")   'Coloco en la variable idDignidad el campo del idDignidad del candidato.
+                            idDignidad = u("Usuario")
+
                             Dim winV_Candidato As New WinMenuCandidato()
                             winV_Candidato.Owner = Me
                             winV_Candidato.DataContext = winPrincipal.dbPath

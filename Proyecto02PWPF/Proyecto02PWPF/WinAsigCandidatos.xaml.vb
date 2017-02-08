@@ -21,4 +21,8 @@
         venMenuAdm.Show()
         Me.Hide()
     End Sub
+
+    Private Sub cbx_dignidad_SelectionChanged(sender As Object, e As SelectionChangedEventArgs) Handles cbx_dignidad.SelectionChanged
+
+    End Sub
 End Class
