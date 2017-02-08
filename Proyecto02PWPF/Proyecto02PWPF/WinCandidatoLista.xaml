@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto02PWPF"
         mc:Ignorable="d"
-        Title="WinCandidatoLista" Height="596" Width="621" Icon="Images/check_2.ico" Loaded="Window_Loaded">
+        Title="WinCandidatoLista" Height="596" Width="621" Icon="Images/check_2.ico" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid Background="#FFCEF0EE" Height="561" VerticalAlignment="Bottom" Margin="0,0,-2,5" HorizontalAlignment="Right" Width="615">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -22,7 +22,7 @@
         <ProgressBar x:Name="progbarBin" HorizontalAlignment="Left" Height="20" Margin="385,178,0,0" VerticalAlignment="Top" Width="120" OpacityMask="#FF126BA8" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
         <Label x:Name="lblAlc" Content="ALCALDE" Margin="0,257,256,0" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.08,-6.771" HorizontalAlignment="Right" Width="121" Height="68" VerticalAlignment="Top"/>
         <Label x:Name="lblBin" Content="BINOMIO" Margin="237,0,0,351" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.08,-6.771" HorizontalAlignment="Left" Width="121" Height="42" VerticalAlignment="Bottom"/>
-        <Label x:Name="lblEsc" Content="Escoja una lista" Margin="0,55,341,0" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.08,-6.771" HorizontalAlignment="Right" Width="168" Height="62" VerticalAlignment="Top"/>
+        <Label x:Name="lblEsc" Content="Escoja una lista" Margin="0,55,382,0" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.08,-6.771" HorizontalAlignment="Right" Width="127" Height="36" VerticalAlignment="Top"/>
         <ComboBox x:Name="cmbBoxLis" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="238,62,0,0">
             <Button Content="PSC - 6"/>
             <Button/>

@@ -26,6 +26,7 @@ Public Class WinResultadoCandidato
             dsContVotos = New DataSet("Base")
             adapter.Fill(dsContVotos, "ContadorVotos")
             For Each u As DataRow In dsContVotos.Tables("ContadorVotos").Rows
+
                 If u("idDignidad") = "1" Then
                     encontrado = True
                     numVotosBinomio += u("TotalVotos")
