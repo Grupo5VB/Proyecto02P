@@ -1,6 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.OleDb
-Imports System.Security.Policy
+
 
 Public Class WinCandidatoLista
     Private dsContVotos As DataSet
