@@ -137,9 +137,7 @@ Public Class WinCandidatoLista
 
     End Sub
 
-    Private Sub verDignidad()
-        Throw New NotImplementedException()
-    End Sub
+
 
     Private Sub Window_Closing(sender As Object, e As ComponentModel.CancelEventArgs)
         Dim inicio As New WinMenuCandidato
@@ -149,4 +147,6 @@ Public Class WinCandidatoLista
         Me.Hide()
 
     End Sub
+
+
 End Class
